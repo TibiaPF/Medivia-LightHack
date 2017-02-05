@@ -61,7 +61,7 @@ namespace SimpleLight
             Console.WriteLine("Successfully attached to a Medivia client.");
             int tibiaBase = mediviaOgl.MainModule.BaseAddress.ToInt32();
             IntPtr handle = mediviaOgl.Handle;
-            int start = tibiaBase + 0x57214C;
+            int start = tibiaBase + 0x57442C;
             int playerBase = ReadInt(start, handle);
 
             CancellationTokenSource lightHackCancellationTokenSource = new CancellationTokenSource();
